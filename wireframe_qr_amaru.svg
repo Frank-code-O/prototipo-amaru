@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+<title id="title">Escáner QR de animales</title>
+<desc id="desc">Pantalla de cámara para leer el código QR de un animal y marcarlo como visitado.</desc>
+<rect width="390" height="844" fill="#f8faf6"/>
+<text x="22" y="20" font-family="Arial" font-size="12" font-weight="700" fill="#26382f">9:41</text><text x="331" y="20" font-family="Arial" font-size="11" fill="#26382f">● Offline</text>
+<path d="M31 55l-10 10 10 10" fill="none" stroke="#31483b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="51" y="70" font-family="Arial" font-size="18" font-weight="700" fill="#20372e">Escanear QR</text>
+<text x="22" y="104" font-family="Arial" font-size="13" fill="#65756c">Enfoca el código que está junto al animal.</text>
+<rect x="18" y="140" width="354" height="430" rx="24" fill="#26382f"/>
+<rect x="63" y="205" width="264" height="264" rx="22" fill="#364a3d"/>
+<path d="M83 245v-20q0-8 8-8h22M307 245v-20q0-8-8-8h-22M83 429v20q0 8 8 8h22M307 429v20q0 8-8 8h-22" fill="none" stroke="#f6f3e9" stroke-width="5" stroke-linecap="round"/>
+<path d="M105 274h42v42h-42zM115 284h10v10h-10zM131 284h8v8h-8zM115 300h8v8h-8zM170 274h12v12h-12zM194 274h36v36h-36zM202 282h20v20h-20zM249 274h24v24h-24zM255 280h12v12h-12zM105 337h20v20h-20zM111 343h8v8h-8zM145 333h32v12h-32zM145 353h12v36h-12zM169 365h28v12h-28zM211 327h18v18h-18zM237 313h12v35h-12zM261 313h12v12h-12zM205 393h39v12h-39zM255 365h18v36h-18zM105 383h24v24h-24z" fill="#f6f3e9"/>
+<line x1="82" y1="337" x2="308" y2="337" stroke="#91a04d" stroke-width="2" opacity=".9"/>
+<text x="195" y="510" text-anchor="middle" font-family="Arial" font-size="12" fill="#f6f3e9">El código identifica el punto del animal.</text>
+<rect x="18" y="594" width="354" height="78" rx="18" fill="#eaf2e8"/>
+<circle cx="53" cy="633" r="18" fill="#d4e5d2"/><text x="53" y="638" text-anchor="middle" font-family="Arial" font-size="15" fill="#2f6b4b">i</text>
+<text x="82" y="626" font-family="Arial" font-size="12" font-weight="700" fill="#304539">No necesitas internet</text><text x="82" y="647" font-family="Arial" font-size="11" fill="#65756c">Avance local de esta visita.</text>
+<rect x="18" y="695" width="354" height="54" rx="17" fill="#2f6b4b"/>
+<text x="195" y="728" text-anchor="middle" font-family="Arial" font-size="15" font-weight="700" fill="white">Abrir cámara</text>
+<text x="195" y="778" text-anchor="middle" font-family="Arial" font-size="10" fill="#748176">El prototipo simula la lectura del código.</text>
+<rect x="0" y="790" width="390" height="54" fill="white"/><line x1="0" y1="790" x2="390" y2="790" stroke="#e7ece5"/>
+<text x="195" y="823" text-anchor="middle" font-family="Arial" font-size="10" fill="#2f6b4b">Volver al mapa</text>
+</svg>
+
+

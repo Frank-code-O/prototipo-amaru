@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+<title id="title">Mapa del Bioparque Amaru</title>
+<desc id="desc">Pantalla móvil basada en el mapa nítido proporcionado. El plano conserva sus símbolos; la interfaz usa una paleta natural y una leyenda visual de apoyo.</desc>
+<defs><clipPath id="mapClip"><rect x="12" y="146" width="366" height="574" rx="18"/></clipPath></defs>
+<rect width="390" height="844" fill="#f6f4ec"/>
+<text x="22" y="20" font-family="Arial" font-size="12" font-weight="700" fill="#26382f">9:41</text><text x="331" y="20" font-family="Arial" font-size="10" fill="#26382f">● Offline</text>
+<text x="20" y="56" font-family="Arial" font-size="20" font-weight="700" fill="#26382f">Mapa del Bioparque</text>
+<rect x="18" y="69" width="354" height="42" rx="14" fill="white" stroke="#dce3d6"/>
+<text x="34" y="95" font-family="Arial" font-size="12" fill="#65756c">⌕  Buscar animales o lugares</text>
+<g font-family="Arial" font-size="9" font-weight="700">
+<rect x="18" y="118" width="100" height="22" rx="11" fill="#2f6b4b"/><text x="68" y="133" text-anchor="middle" fill="white">Animales</text>
+<rect x="124" y="118" width="100" height="22" rx="11" fill="#e8e8d9"/><text x="174" y="133" text-anchor="middle" fill="#536353">Servicios</text>
+<rect x="230" y="118" width="100" height="22" rx="11" fill="#e8e8d9"/><text x="280" y="133" text-anchor="middle" fill="#536353">Recorrido</text>
+</g>
+<g clip-path="url(#mapClip)">
+<rect x="12" y="146" width="366" height="574" fill="#eee7d9"/>
+<image x="12" y="146" width="366" height="574" preserveAspectRatio="xMidYMid meet" href="mapa_amaru_con_indicadores_qr.png"/>
+</g>
+<rect x="20" y="154" width="88" height="24" rx="12" fill="white" fill-opacity=".95"/>
+<text x="64" y="170" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700" fill="#2f6b4b">Visitados: 0</text>
+<g font-family="Arial" text-anchor="middle">
+<rect x="337" y="154" width="32" height="64" rx="14" fill="white" fill-opacity=".96"/>
+<text x="353" y="180" font-size="20" fill="#344b3c">+</text><line x1="344" y1="186" x2="362" y2="186" stroke="#e1e8df"/><text x="353" y="210" font-size="20" fill="#344b3c">−</text>
+</g>
+<rect x="20" y="620" width="350" height="87" rx="12" fill="white" fill-opacity=".96" stroke="#e5e0d4"/>
+<g font-family="Arial" font-size="9" font-weight="700" fill="#415243">
+<circle cx="35" cy="639" r="4" fill="#73533c"/><text x="44" y="642">Terrestres</text>
+<circle cx="128" cy="639" r="4" fill="#c8788d"/><text x="137" y="642">Mamíferos terrestres</text>
+<circle cx="264" cy="639" r="4" fill="#92999a"/><text x="273" y="642">Otros hábitats</text>
+<circle cx="35" cy="660" r="4" fill="#4f8a58"/><text x="44" y="663">Aves y reptiles</text>
+<circle cx="151" cy="660" r="4" fill="#4879c8"/><text x="160" y="663">Galápagos</text>
+<circle cx="250" cy="660" r="4" fill="#d98736"/><text x="259" y="663">Exóticos</text>
+<circle cx="35" cy="683" r="5" fill="white" stroke="#2f6b4b"/><text x="33" y="685" font-size="6" fill="#2f6b4b">✓</text>
+<text x="46" y="686">QR en el recinto · ✓ Visitado tras escanear</text>
+</g>
+<rect x="0" y="770" width="390" height="74" fill="white"/><line x1="0" y1="770" x2="390" y2="770" stroke="#e7ece5"/>
+<g font-family="Arial" text-anchor="middle">
+<g fill="#2f6b4b"><path d="M62 790l13-10 13 10v15H78v-9h-6v9H62z"/><text x="75" y="820" font-size="10" font-weight="700">Mapa</text></g>
+<g fill="#819087"><circle cx="195" cy="794" r="12" fill="none" stroke="#819087" stroke-width="2"/><text x="195" y="798" font-size="11" font-weight="700">4h</text><text x="195" y="820" font-size="10">Recorrido</text></g>
+<g fill="#819087"><path d="M307 783h23v23h-23z" fill="none" stroke="#819087" stroke-width="2"/><text x="319" y="820" font-size="10">Información</text></g>
+</g>
+</svg>
+
+

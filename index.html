@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Prototipo navegable — Amaru</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header>
+      <h1>Prototipo navegable · App de visitantes Amaru</h1>
+      <p>Prototipo académico de interfaz · navegación y lectura QR de demostración.</p>
+    </header>
+    <main>
+      <section class="panel" aria-label="Controles del prototipo">
+        <h2 id="screenTitle">Mapa</h2>
+        <p>Elige una acción para revisar el flujo. En el teléfono puedes tocar las paradas, arrastrar el mapa y ampliarlo con dos dedos o con los controles.</p>
+        <div class="actions" id="actions"></div>
+        <div id="status" aria-live="polite"></div>
+      </section>
+      <section class="preview" aria-label="Vista del teléfono">
+        <div class="device">
+          <img id="screen" alt="Pantalla actual del prototipo">
+          <!-- Inicio -->
+          <div id="homeScreen" aria-label="Inicio de la aplicación">
+            <div class="homeStatus"><span>9:41</span><span>● Disponible sin conexión</span></div>
+            <div class="homeBrand"><span class="homeMark">♧</span><span><strong>AMARU</strong><small>BIOPARQUE · CUENCA</small></span></div>
+            <div class="homeHero">
+              <p>DESCUBRE EL BIOPARQUE</p>
+              <h2>Explora Amaru</h2>
+              <div class="homeLead">a tu propio ritmo.</div>
+              <div class="homeCopy">Toca los animales para conocerlos y lee los QR para registrar puntos del recorrido.</div>
+            </div>
+            <div class="homeProgress">
+              <div class="homeProgressHead"><span>Tu recorrido de hoy</span><strong id="homeProgressCount">0/9</strong></div>
+              <div class="homeTrack"><span id="homeProgressBar"></span></div>
+              <p>El avance se guarda para esta visita.<br>No necesitas GPS ni conexión a internet.</p>
+              <button class="homeReset" id="homeReset" type="button">Reiniciar visita</button>
+            </div>
+            <button class="homePrimary" id="homeExplore" type="button">Explorar el mapa</button>
+            <button class="homeSecondary" id="homeInfo" type="button">Información y cómo llegar</button>
+          </div>
+          <!-- Mapa -->
+          <div id="mapScreen" aria-label="Mapa principal del Zoológico Amaru">
+            <div class="mapStatus"><span>9:41</span><span>Disponible sin conexión</span></div>
+            <div class="mapHead"><strong id="mapTitle">Mapa del Bioparque</strong>
+              <button id="mapScanButton" type="button">▦ QR</button>
+            </div>
+            <button class="mapSearch" id="mapSearchButton" type="button">⌕ &nbsp; Buscar animales o grupos</button>
+            <div class="mapFilters" id="mapFilters"><span class="selected" role="button" tabindex="0">Ver animales</span><span role="button" tabindex="0">Ver servicios</span><span role="button" tabindex="0">Ver senderos</span></div>
+            <div id="mapContext"></div>
+            <div class="mapCanvas">
+              <div id="mapArtwork">
+                <img id="mapBase" draggable="false" src="mapa_amaru_vectorial.svg" alt="Plano vectorial del Bioparque Amaru con senderos, servicios y paradas QR">
+                <svg id="visitedMapOverlay" viewBox="0 0 1041 1510" preserveAspectRatio="xMidYMid meet" aria-label="Paradas del recorrido"></svg>
+              </div>
+              <div class="mapProgress" id="visitCount">Visitados: 0</div>
+              <div class="mapZoom">
+                <button type="button" id="mapZoomIn" aria-label="Ampliar mapa">+</button>
+                <button type="button" id="mapZoomOut" aria-label="Reducir mapa">−</button>
+              </div>
+              <div class="mapKey" aria-label="Leyenda de puntos del recorrido">
+                <span class="visitLegend"><strong>▦</strong> Punto de recorrido · <i class="visited">✓</i> Punto registrado</span>
+              </div>
+            </div>
+            <div class="mapNav"><span class="active">Mapa</span><span>Recorrido</span><span>Información</span></div>
+          </div>
+          <!-- Lectura QR -->
+          <div id="qrLive" class="liveScreen" aria-label="Leer punto QR">
+            <div>9:41 · Disponible sin conexión</div>
+            <h2>Leer un punto QR</h2>
+            <p>Elige un punto para probar cómo se registra en el mapa.</p>
+            <section class="simCard" aria-label="Simulación de lectura QR">
+              <h3>Simulación de escaneo</h3>
+              <p>Esta prueba no utiliza la cámara.</p>
+              <label for="qrStopSelect">Punto del recorrido</label>
+              <select id="qrStopSelect"></select>
+              <div id="simFrame" class="simFrame">
+                <img id="simQrImage" src="codigos_demostracion/qr_punto_01.png" alt="Código QR de ejemplo del punto seleccionado">
+              </div>
+              <p id="simStatus" class="simStatus" role="status" aria-live="polite">Listo para simular</p>
+              <button type="button" id="qrSimulate">Simular escaneo</button>
+            </section>
+            <button type="button" id="startCamera" class="secondary">Abrir cámara real</button>
+            <video id="qrCamera" playsinline muted hidden></video>
+            <button type="button" id="stopCamera" class="secondary" hidden>Detener cámara</button>
+            <p id="cameraMessage" role="status"></p>
+            <details><summary>Introducir un código manualmente</summary>
+              <label for="qrCodeInput">Contenido del código</label><input id="qrCodeInput" placeholder="AMARU-QR-01" autocomplete="off">
+              <button type="button" class="secondary" id="qrValidate">Validar código</button>
+            </details>
+            <p id="qrError" class="message" role="alert"></p>
+            <button type="button" class="secondary" id="qrBack">Volver al mapa</button>
+          </div>
+          <!-- Recorrido -->
+          <div id="listLive" class="liveScreen" aria-label="Animales y estado del recorrido">
+            <h2>Animales del recorrido</h2>
+            <p id="routeSummary"></p>
+            <button type="button" class="secondary" id="listReset">Reiniciar visita</button>
+            <label for="animalSearch">Buscar animal o grupo</label><input id="animalSearch" class="liveSearch" type="search" placeholder="Nombre del animal">
+            <div id="routeRows"></div>
+            <h2>Puntos del recorrido</h2>
+            <p>Los puntos muestran referencias para orientar el recorrido.</p>
+            <div id="pointRows"></div>
+            <button type="button" class="secondary" id="listBack">Volver al mapa</button>
+          </div>
+          <!-- Servicios y contenidos adicionales -->
+          <div id="servicesLive" class="liveScreen" aria-label="Servicios para visitantes">
+            <h2>Servicios del bioparque</h2>
+            <p>Consulta el mapa para reconocer estos espacios. Los servicios no llevan QR.</p>
+            <div class="serviceCard"><strong>Baños</strong><small>Señalados en el mapa.</small></div>
+            <div class="serviceCard"><strong>Restaurante y cafetería</strong><small>Opciones de alimentación señaladas.</small></div>
+            <div class="serviceCard"><strong>Boletería y parqueadero</strong><small>Junto al acceso del recorrido.</small></div>
+            <div class="serviceCard"><strong>Miradores y descanso</strong><small>Puntos de interés visibles en el plano.</small></div>
+            <p>La clínica de vida silvestre no equivale a primeros auxilios para visitantes. La ubicación de información y primeros auxilios para personas está pendiente de confirmación.</p>
+            <button type="button" id="serviceBack" class="secondary">Volver al mapa</button>
+          </div>
+          <div id="visitLive" class="liveScreen" aria-label="Resultado de la lectura QR">
+            <h2 id="visitTitle">Visita registrada</h2>
+            <p id="visitMessage"></p>
+            <button type="button" id="visitMap">Ver el mapa</button>
+            <button type="button" class="secondary" id="visitRoute">Ver recorrido</button>
+          </div>
+          <div id="nativeScreen" class="liveScreen" aria-label="Contenido de la pantalla"></div>
+          <!-- Navegación principal -->
+          <nav class="screenNav" aria-label="Navegación principal">
+            <button type="button" data-go="inicio">Inicio</button>
+            <button type="button" data-go="mapa">Mapa</button>
+            <button type="button" data-go="lista">Recorrido</button>
+            <button type="button" data-go="informacion">Información</button>
+          </nav>
+          <button id="ficheQrAction" class="ficheQrAction" type="button">▦ QR de esta parada</button>
+        </div>
+      </section>
+      <p class="note">Toca un animal del plano para abrir su ficha. El distintivo ▦ señala un punto QR propuesto del recorrido; su ubicación exacta debe confirmarse.</p>
+      <details class="regionNotes"><summary>Biorregiones del bioparque</summary>
+        <p>El parque presenta divisiones temáticas como Andes, Mágico Bosque Seco, Amazonía, Islas Encantadas y África Salvaje. Esta propuesta las menciona como contexto, sin asignar especies o paradas a cada una ni dibujar límites sobre el plano.</p>
+      </details>
+    </main>
+    <script src="datos.js"></script>
+    <script src="camara.js"></script>
+    <script src="funciones.js"></script>
+  </body>
+</html>

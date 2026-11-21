@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+<title id="title">Zona del mapa seleccionada</title><desc id="desc">Vista del mapa original con una indicación para seleccionar un punto de animal. La ubicación exacta queda pendiente de validar.</desc>
+<defs><clipPath id="clip"><rect x="12" y="130" width="366" height="590" rx="18"/></clipPath></defs>
+<rect width="390" height="844" fill="#f6f4ec"/>
+<text x="22" y="20" font-family="Arial" font-size="12" font-weight="700" fill="#26382f">9:41</text><text x="331" y="20" font-family="Arial" font-size="10" fill="#26382f">● Offline</text>
+<text x="20" y="56" font-family="Arial" font-size="20" font-weight="700" fill="#26382f">Explora el mapa</text>
+<rect x="18" y="69" width="354" height="42" rx="14" fill="white" stroke="#dce3d6"/><text x="34" y="95" font-family="Arial" font-size="12" fill="#65756c">⌕  Buscar animales o lugares</text>
+<g clip-path="url(#clip)"><rect x="12" y="130" width="366" height="590" fill="#eee7d9"/><image x="12" y="130" width="366" height="590" preserveAspectRatio="xMidYMid meet" href="mapa_amaru_con_indicadores_qr.png"/></g>
+<rect x="20" y="146" width="226" height="42" rx="13" fill="white" fill-opacity=".95"/>
+<text x="33" y="164" font-family="Arial" font-size="10" font-weight="700" fill="#2f6b4b">Punto seleccionado</text>
+<text x="33" y="179" font-family="Arial" font-size="9" fill="#65756c">Toca un animal para abrir su ficha.</text>
+<rect x="18" y="650" width="354" height="56" rx="15" fill="white" fill-opacity=".96" stroke="#e0e8dd"/>
+<text x="32" y="674" font-family="Arial" font-size="11" font-weight="700" fill="#304539">Información del recinto</text>
+<text x="32" y="692" font-family="Arial" font-size="9" fill="#65756c">Nombre y ubicación exacta: por validar con Amaru.</text>
+<rect x="0" y="770" width="390" height="74" fill="white"/><line x1="0" y1="770" x2="390" y2="770" stroke="#e7ece5"/>
+<g font-family="Arial" text-anchor="middle"><g fill="#2f6b4b"><path d="M62 790l13-10 13 10v15H78v-9h-6v9H62z"/><text x="75" y="820" font-size="10" font-weight="700">Mapa</text></g><g fill="#819087"><circle cx="195" cy="794" r="12" fill="none" stroke="#819087" stroke-width="2"/><text x="195" y="798" font-size="11" font-weight="700">4h</text><text x="195" y="820" font-size="10">Recorrido</text></g><g fill="#819087"><path d="M307 783h23v23h-23z" fill="none" stroke="#819087" stroke-width="2"/><text x="319" y="820" font-size="10">Información</text></g></g>
+</svg>

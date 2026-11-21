@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+<title id="title">Confirmar nueva visita</title>
+<desc id="desc">Confirmación para reiniciar manualmente el progreso de animales visitados al comenzar otra visita.</desc>
+<rect width="390" height="844" fill="#f8faf6"/>
+<text x="22" y="20" font-family="Arial" font-size="12" font-weight="700" fill="#26382f">9:41</text><text x="331" y="20" font-family="Arial" font-size="11" fill="#26382f">● Offline</text>
+<text x="20" y="58" font-family="Arial" font-size="20" font-weight="700" fill="#20372e">Nueva visita</text>
+<rect x="18" y="132" width="354" height="392" rx="24" fill="#eef4e9" stroke="#dce5da"/>
+<path d="M55 430 C95 397 116 359 153 333 C190 307 222 278 247 232 C269 193 301 188 331 166" fill="none" stroke="#fff" stroke-width="15" stroke-linecap="round"/>
+<path d="M55 430 C95 397 116 359 153 333 C190 307 222 278 247 232 C269 193 301 188 331 166" fill="none" stroke="#b7a27a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="90" cy="390" r="19" fill="#2f6b4b" stroke="white" stroke-width="4"/><path d="M80 390l7 7 13-15" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="184" cy="306" r="19" fill="#2f6b4b" stroke="white" stroke-width="4"/><path d="M174 306l7 7 13-15" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="276" cy="214" r="19" fill="#2f6b4b" stroke="white" stroke-width="4"/><path d="M266 214l7 7 13-15" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="18" y="554" width="354" height="115" rx="18" fill="white" stroke="#e0e8dd"/>
+<text x="38" y="585" font-family="Arial" font-size="15" font-weight="700" fill="#304539">¿Comenzar una nueva visita?</text>
+<text x="38" y="611" font-family="Arial" font-size="11" fill="#65756c">Se borrarán las marcas de animales visitados</text>
+<text x="38" y="630" font-family="Arial" font-size="11" fill="#65756c">durante la visita anterior de este dispositivo.</text>
+<text x="38" y="650" font-family="Arial" font-size="10" font-weight="700" fill="#2f6b4b">Sin GPS, el reinicio se confirma manualmente.</text>
+<rect x="18" y="690" width="168" height="52" rx="16" fill="#eef2ec" stroke="#dce5da"/>
+<text x="102" y="722" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#405347">Cancelar</text>
+<rect x="202" y="690" width="170" height="52" rx="16" fill="#2f6b4b"/>
+<text x="287" y="722" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="white">Iniciar visita</text>
+<text x="195" y="775" text-anchor="middle" font-family="Arial" font-size="10" fill="#89948b">Puedes volver al mapa sin cambiar el progreso.</text>
+</svg>
+

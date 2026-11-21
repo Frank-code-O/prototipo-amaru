@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844" role="img" aria-labelledby="title desc">
+<title id="title">Información para visitantes</title>
+<desc id="desc">Pantalla de información con horario, precios, cómo llegar, recomendaciones, charlas y contacto. La sección de charlas no muestra horarios no confirmados.</desc>
+<rect width="390" height="844" fill="#f8faf6"/>
+<text x="22" y="20" font-family="Arial" font-size="12" font-weight="700" fill="#26382f">9:41</text><text x="331" y="20" font-family="Arial" font-size="11" fill="#26382f">● Offline</text>
+<text x="20" y="57" font-family="Arial" font-size="21" font-weight="700" fill="#20372e">Información</text>
+<text x="20" y="79" font-family="Arial" font-size="12" fill="#65756c">Datos útiles para preparar tu visita</text>
+<rect x="18" y="92" width="354" height="59" rx="15" fill="#eaf2e8"/>
+<circle cx="47" cy="121" r="17" fill="#d4e5d2"/><text x="47" y="126" text-anchor="middle" font-family="Arial" font-size="14" fill="#2f6b4b">◷</text>
+<text x="75" y="115" font-family="Arial" font-size="10" fill="#65756c">Horario de atención</text><text x="75" y="136" font-family="Arial" font-size="16" font-weight="700" fill="#2f6b4b">09:00 – 18:00</text>
+<text x="20" y="174" font-family="Arial" font-size="13" font-weight="700" fill="#304539">Precios de entrada</text>
+<rect x="18" y="184" width="170" height="41" rx="11" fill="white" stroke="#e0e8dd"/><text x="29" y="201" font-family="Arial" font-size="9" fill="#65756c">Adultos · 18–64 años</text><text x="29" y="217" font-family="Arial" font-size="12" font-weight="700" fill="#20372e">$10,00</text>
+<rect x="202" y="184" width="170" height="41" rx="11" fill="white" stroke="#e0e8dd"/><text x="213" y="201" font-family="Arial" font-size="9" fill="#65756c">Jóvenes · 13–17 años</text><text x="213" y="217" font-family="Arial" font-size="12" font-weight="700" fill="#20372e">$7,00</text>
+<rect x="18" y="231" width="170" height="41" rx="11" fill="white" stroke="#e0e8dd"/><text x="29" y="248" font-family="Arial" font-size="9" fill="#65756c">Niños · 2–12 años</text><text x="29" y="264" font-family="Arial" font-size="12" font-weight="700" fill="#20372e">$6,00</text>
+<rect x="202" y="231" width="170" height="41" rx="11" fill="white" stroke="#e0e8dd"/><text x="213" y="248" font-family="Arial" font-size="9" fill="#65756c">Tercera edad · desde 65</text><text x="213" y="264" font-family="Arial" font-size="12" font-weight="700" fill="#20372e">$5,00</text>
+<text x="20" y="301" font-family="Arial" font-size="13" font-weight="700" fill="#304539">Cómo llegar</text>
+<rect x="18" y="310" width="354" height="132" rx="14" fill="white" stroke="#e0e8dd"/>
+<text x="30" y="331" font-family="Arial" font-size="10" font-weight="700" fill="#304539">Autopista Cuenca–Azogues, km 10,5</text>
+<text x="30" y="348" font-family="Arial" font-size="9" fill="#65756c">Entrada frente al Hospital del Río.</text>
+<text x="30" y="365" font-family="Arial" font-size="9" fill="#65756c">Sube 600 m por una calle lastrada hasta el</text>
+<text x="30" y="380" font-family="Arial" font-size="9" fill="#65756c">parqueadero del bioparque.</text>
+<rect x="30" y="389" width="330" height="34" rx="11" fill="#2f6b4b"/>
+<text x="195" y="411" text-anchor="middle" font-family="Arial" font-size="11" font-weight="700" fill="white">Abrir Google Maps ↗</text>
+<text x="195" y="435" text-anchor="middle" font-family="Arial" font-size="8" fill="#89948b">Enlace de demostración; falta validar la ubicación oficial.</text>
+<text x="20" y="468" font-family="Arial" font-size="13" font-weight="700" fill="#304539">Duración y recomendaciones</text>
+<rect x="18" y="477" width="354" height="67" rx="13" fill="white" stroke="#e0e8dd"/>
+<text x="30" y="499" font-family="Arial" font-size="10" font-weight="700" fill="#304539">Visita aproximada: 4 horas</text>
+<text x="30" y="517" font-family="Arial" font-size="9" fill="#65756c">Hay subidas, bajadas y senderos de distintas superficies.</text>
+<text x="30" y="534" font-family="Arial" font-size="9" font-weight="700" fill="#2f6b4b">Se recomienda usar calzado cómodo.</text>
+<text x="20" y="569" font-family="Arial" font-size="13" font-weight="700" fill="#304539">Charlas y actividades</text>
+<rect x="18" y="578" width="354" height="68" rx="13" fill="#f4f1e8" stroke="#e3ddce"/>
+<text x="30" y="600" font-family="Arial" font-size="10" font-weight="700" fill="#5a4936">Conoce las charlas disponibles durante tu visita.</text>
+<text x="30" y="618" font-family="Arial" font-size="9" fill="#65756c">La programación y los horarios pueden variar;</text>
+<text x="30" y="633" font-family="Arial" font-size="9" fill="#65756c">consulta en el zoológico qué actividades hay.</text>
+<text x="20" y="670" font-family="Arial" font-size="13" font-weight="700" fill="#304539">Contacto</text>
+<rect x="18" y="679" width="354" height="64" rx="13" fill="white" stroke="#e0e8dd"/>
+<text x="30" y="699" font-family="Arial" font-size="9" fill="#65756c">Información y teléfonos oficiales</text>
+<text x="30" y="717" font-family="Arial" font-size="10" font-weight="700" fill="#2f6b4b">096 995 6055 · 099 568 1677 · 099 378 1679</text>
+<text x="20" y="760" font-family="Arial" font-size="8" fill="#89948b">Mapa e información básica disponibles sin conexión.</text>
+<rect x="0" y="770" width="390" height="74" fill="white"/><line x1="0" y1="770" x2="390" y2="770" stroke="#e7ece5"/>
+<g font-family="Arial" text-anchor="middle">
+<g fill="#819087"><path d="M62 790l13-10 13 10v15H78v-9h-6v9H62z"/><text x="75" y="820" font-size="10">Mapa</text></g>
+<g fill="#819087"><circle cx="195" cy="794" r="12" fill="none" stroke="#819087" stroke-width="2"/><text x="195" y="798" font-size="11" font-weight="700">4h</text><text x="195" y="820" font-size="10">Recorrido</text></g>
+<g fill="#2f6b4b"><path d="M307 783h23v23h-23z" fill="none" stroke="#2f6b4b" stroke-width="2"/><text x="319" y="820" font-size="10" font-weight="700">Información</text></g>
+</g>
+</svg>
+
